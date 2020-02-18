@@ -4,6 +4,7 @@ require 'pry'
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
 def gross_for_director(director_data)
+<<<<<<< HEAD
  
  total = 0
   i = 0 
@@ -15,6 +16,11 @@ def gross_for_director(director_data)
 end
 
 return total
+=======
+  first_director_name = directors_database.first.values.first == 1357566430
+  first_director_hash = directors_database.find{ |x| x[:name] == first_director_name }
+  
+>>>>>>> 4ba007d9ee02233b32bcc08aa2bde7efdd3de995
 end
 
 
